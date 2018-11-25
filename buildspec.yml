@@ -16,7 +16,6 @@ phases:
   pre_build:
     commands:
        - export PATH="$PATH:/root/.dotnet/tools"
-       - echo testando comandos
        - cd Test
       # - command
   build:
@@ -27,12 +26,12 @@ phases:
     #commands:
       # - command
       # - command
-#artifacts:
-  #files:
+artifacts:
+  files:
+     - $CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip
     # - location
-    # - location
-  #name: $(date +%Y-%m-%d)
-  #discard-paths: yes
+  name: $lambda-build-(AWS_REGION)-$(date +%Y-%m-%d)
+  discard-paths: yes
   #base-directory: location
 #cache:
   #paths:
