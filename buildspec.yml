@@ -28,9 +28,9 @@ phases:
        - ls $CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1
 artifacts:
   files:
-     - $CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip"
-    # - location
-  name: $lambda-build-(AWS_REGION)-$(date +%Y-%m-%d)
+     - "$CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip"
+  name: lambda-build-$(AWS_REGION)-$(date +%Y%m%d_%H%m%ss)
+  
   discard-paths: yes
   #base-directory: location
 #cache:
