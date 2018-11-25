@@ -33,7 +33,7 @@ phases:
 artifacts:
   files:
      - "$CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip"
-  name: build-$AWS_REGION-$(date +%Y%m%d_%H%m%ss%fff)
+  name: build-$AWS_REGION-$(date +%Y%m%d_%H%m%ss).zip
   
   discard-paths: yes
   #base-directory: location
