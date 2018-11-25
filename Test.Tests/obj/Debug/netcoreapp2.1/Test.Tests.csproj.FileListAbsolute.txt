@@ -1,0 +1,17 @@
+C:\Users\italopessoa\source\repos\Test\Test.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\italopessoa\source\repos\Test\Test.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\italopessoa\source\repos\Test\Test.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\italopessoa\source\repos\Test\Test.Tests\bin\Debug\netcoreapp2.1\Test.Tests.deps.json
+C:\Users\italopessoa\source\repos\Test\Test.Tests\bin\Debug\netcoreapp2.1\Test.Tests.runtimeconfig.json
+C:\Users\italopessoa\source\repos\Test\Test.Tests\bin\Debug\netcoreapp2.1\Test.Tests.runtimeconfig.dev.json
+C:\Users\italopessoa\source\repos\Test\Test.Tests\bin\Debug\netcoreapp2.1\Test.Tests.dll
+C:\Users\italopessoa\source\repos\Test\Test.Tests\bin\Debug\netcoreapp2.1\Test.Tests.pdb
+C:\Users\italopessoa\source\repos\Test\Test.Tests\bin\Debug\netcoreapp2.1\Test.dll
+C:\Users\italopessoa\source\repos\Test\Test.Tests\bin\Debug\netcoreapp2.1\Test.pdb
+C:\Users\italopessoa\source\repos\Test\Test.Tests\obj\Debug\netcoreapp2.1\Test.Tests.csprojAssemblyReference.cache
+C:\Users\italopessoa\source\repos\Test\Test.Tests\obj\Debug\netcoreapp2.1\Test.Tests.csproj.CoreCompileInputs.cache
+C:\Users\italopessoa\source\repos\Test\Test.Tests\obj\Debug\netcoreapp2.1\Test.Tests.AssemblyInfoInputs.cache
+C:\Users\italopessoa\source\repos\Test\Test.Tests\obj\Debug\netcoreapp2.1\Test.Tests.AssemblyInfo.cs
+C:\Users\italopessoa\source\repos\Test\Test.Tests\obj\Debug\netcoreapp2.1\Test.Tests.csproj.CopyComplete
+C:\Users\italopessoa\source\repos\Test\Test.Tests\obj\Debug\netcoreapp2.1\Test.Tests.dll
+C:\Users\italopessoa\source\repos\Test\Test.Tests\obj\Debug\netcoreapp2.1\Test.Tests.pdb
