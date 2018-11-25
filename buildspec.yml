@@ -23,13 +23,17 @@ phases:
        - dotnet-lambda package
   post_build:
     commands:
-       - echo "$CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip"
        - echo $CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip
+       #- echo "************************************"
+       #- echo $CODEBUILD_BUILD_ID
+       #- echo $AWS_REGION
+       #- echo $AWS_DEFAULT_REGION
+       #- echo "************************************"
        - ls $CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1
 artifacts:
   files:
      - "$CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip"
-  name: lambda-build-$(AWS_REGION)-$(date +%Y%m%d_%H%m%ss)
+  name: build-$AWS_REGION-$(date +%Y%m%d_%H%m%ss%fff)
   
   discard-paths: yes
   #base-directory: location
