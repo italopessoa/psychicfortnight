@@ -34,7 +34,7 @@ namespace Test
             var response = new APIGatewayProxyResponse
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Body = JsonConvert.SerializeObject(question),
+                Body = "NEW VERSION",
                 Headers = new Dictionary<string, string> { { "Content-Type", "text/plain" } }
             };
 
