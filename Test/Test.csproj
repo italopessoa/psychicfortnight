@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -8,10 +8,11 @@
 
   <ItemGroup>
     <None Remove="appspec.yaml" />
+    <None Remove="appspec.yml" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="appspec.yaml">
+    <EmbeddedResource Include="appspec.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
