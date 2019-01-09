@@ -13,7 +13,7 @@ phases:
     commands:
        - echo $BUCKET
        - aws --version
-       - aws cloudformation package --template-file appspec.yml --s3-bucket $BUCKET --output-template-file appspecOutput.yaml --debug
+       #- aws cloudformation package --template-file appspec.yml --s3-bucket $BUCKET --output-template-file appspecOutput.yaml --debug
        - dotnet tool install -g Amazon.Lambda.Tools
       # - command
   pre_build:
@@ -27,6 +27,7 @@ phases:
   post_build:
     commands:
        - echo $CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip
+       - aws lambda update-function-code --function-name Test --zip-file $CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip
        #- echo "************************************"
        #- echo $CODEBUILD_BUILD_ID
        #- echo $AWS_REGION
@@ -36,8 +37,8 @@ phases:
 artifacts:
   files:
      - "$CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip"
-     - appspec.yml
-     - appspecOutput.yaml
+     #- appspec.yml
+     #- appspecOutput.yaml
   #name: build-$AWS_REGION-$(date +%Y%m%d_%H%m%ss).zip
   
   discard-paths: yes
