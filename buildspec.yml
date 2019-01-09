@@ -11,8 +11,10 @@ version: 0.2
 phases:
   install:
     commands:
-       - dotnet tool install -g Amazon.Lambda.Tools
+       - echo $BUCKET
+       - aws --version
        - aws cloudformation package --template-file appspec.yml --s3-bucket $BUCKET --output-template-file appspecOutput.yaml --debug
+       - dotnet tool install -g Amazon.Lambda.Tools
       # - command
   pre_build:
     commands:
