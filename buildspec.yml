@@ -31,7 +31,7 @@ phases:
     commands:
        - ls
        - echo $CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip
-       #- aws lambda update-function-code --function-name Test --zip-file fileb://./bin/Release/netcoreapp2.1/Test.zip
+       - aws lambda update-function-code --function-name Test --zip-file fileb://bin/Release/netcoreapp2.1/Test.zip
        #- echo "************************************"
        #- echo $CODEBUILD_BUILD_ID
        #- echo $AWS_REGION
