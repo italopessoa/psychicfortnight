@@ -27,7 +27,7 @@ phases:
   post_build:
     commands:
        - echo $CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip
-       - aws lambda update-function-code --function-name Test --zip-file $CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip
+       - aws lambda update-function-code --function-name Test --zip-file $CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip --debug
        #- echo "************************************"
        #- echo $CODEBUILD_BUILD_ID
        #- echo $AWS_REGION
