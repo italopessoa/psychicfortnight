@@ -12,6 +12,9 @@ phases:
   install:
     commands:
        - echo $BUCKET
+       - echo fileb://$CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip
+       - echo "fileb://$CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip"
+       - echo fileb://"$CODEBUILD_SRC_DIR/Test/bin/Release/netcoreapp2.1/Test.zip"
        - aws --version
        #- aws cloudformation package --template-file appspec.yml --s3-bucket $BUCKET --output-template-file appspecOutput.yaml --debug
        - dotnet tool install -g Amazon.Lambda.Tools
